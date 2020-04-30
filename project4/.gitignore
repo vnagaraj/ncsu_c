@@ -1,0 +1,4 @@
+# ignore object files
+*.o
+# ignore our temporary output files
+*/output.txt

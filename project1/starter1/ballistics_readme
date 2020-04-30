@@ -1,0 +1,19 @@
+#compile program
+gcc -D_GNU_SOURCE -Wall -std=c99 ballistics.c -o ballistics -lm
+# generate output for testcase1
+./ballistics < input-b1.txt >| output-b1.txt
+# compare result
+diff output-b1.txt expected-b1.txt
+# generate output for testcase2
+./ballistics < input-b2.txt >| output-b2.txt
+# compare result
+diff output-b2.txt expected-b2.txt
+# generate output for testcase3
+./ballistics < input-b3.txt >| output-b3.txt
+# compare result
+diff output-b3.txt expected-b3.txt
+# generate output for testcase4
+./ballistics < input-b4.txt >| output-b4.txt
+# compare result
+diff output-b4.txt expected-b4.txt
+echo "program succeeded"

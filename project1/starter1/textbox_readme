@@ -1,0 +1,18 @@
+#compile program
+gcc -Wall -std=c99 textbox.c -o textbox
+# generate output for testcase1
+./textbox < input-t1.txt >| output-t1.txt
+# compare result
+diff output-t1.txt expected-t1.txt
+# generate output for testcase2
+./textbox < input-t2.txt >| output-t2.txt
+# compare result
+diff output-t2.txt expected-t2.txt
+# generate output for testcase3
+./textbox < input-t3.txt >| output-t3.txt
+# compare result
+diff output-t3.txt expected-t3.txt
+# generate output for testcase4
+./textbox < input-t4.txt >| output-t4.txt
+# compare result
+diff output-t4.txt expected-t4.txt
